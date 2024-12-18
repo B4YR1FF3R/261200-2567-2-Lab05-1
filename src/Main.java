@@ -48,6 +48,14 @@ class User {
 // User(ตัวแม่) = superclass : ตัวหลัก ไว้กำหนดคุณสมบัติพื้นฐาน
 class Admin extends User {
 
+    public Admin() {
+        super();
+    }
+
+    public Admin(String name, int year, int month, int day) {
+        super(name,year,month,day);
+    }
+    
     // @Override เป็น annotation (ตัวโม ตัวม็อด) ที่เสริมเข้าไปใส่ class USER
     // "ควรใช้ทุกครั้งที่มีการเขียนทับเมธอดของคลาสแม่ เพื่อป้องกันปัญหาและรักษาความสอดคล้องระหว่างคลาสแม่และลูก."
     @Override
